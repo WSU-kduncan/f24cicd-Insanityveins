@@ -1,7 +1,7 @@
 FROM node:18-bullseye
 
 WORKDIR /usr/src/app
-COPY ./wsu-hw-ng-main/ .
+COPY ./angular-site/ .
 
 RUN npm install -g @angular/cli
 RUN npm install
