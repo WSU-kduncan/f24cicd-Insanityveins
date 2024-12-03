@@ -33,3 +33,17 @@ This part of the project defines the Dockerfile that will be used to create the 
         * `docker push insanityveins/ivery-ceg3120:angular-app`
 
 ## Part 2
+
+### Configuring GitHub Secrets
+* Create a github secret for a repo by going to the repo's settings > Secrets and Variables > New repository secret
+* Docker username and token key is set for this project
+
+### Behavior of GitHub workflow
+* My workflow checks out the repository (I don't think this one is needed but it works so I am not breaking it 😇) and other all of the docker pieces necessary to build and push an image to docker hub. It utilized my docker account through means of a token for authentication.
+* [Link to Workflow](https://github.com/WSU-kduncan/f24cicd-Insanityveins/tree/main/.github/workflows)
+* To duplicate this project, another user would need to edit the Docker Username/Password secrets for the image build and push to work successfully.
+
+## Part 3
+### Diagram
+
+![Diagram of flow from source code to github action to docker hub image storage](./images/image.png)
