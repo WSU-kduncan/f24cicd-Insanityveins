@@ -1,4 +1,4 @@
-# PROJECT 4 README
+# PROJECT 4 - CI README
 
 ## Part 1
 ### Overview
