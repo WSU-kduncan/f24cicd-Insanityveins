@@ -40,4 +40,4 @@ jobs:
           push: true
           # tags: insanityveins/ivery-ceg3120:latest old working
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.output.labels }}
+          labels: ${{ steps.meta.outputs.labels }}
