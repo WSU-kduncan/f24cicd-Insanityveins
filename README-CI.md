@@ -18,9 +18,11 @@ This part of the project defines the Dockerfile that will be used to create the 
     * `EXPOSE` to provide a port to access the web page
     * `CMD` to execute the command needed to start the webpage when the container is launched
 * How to build an image
-    *  `docker build -t <tag-name> <image-name> <directory>`
+    * `docker build -t <tag-name> <directory>`
+    * `docker build -t angular-site .`
 * How to run container from a built image
     * `docker run [flags] <image>`
+    * `docker run --rm --name angular_app -p 80:4200 angular-site`
 * View the application by going to a browser and opening `localhost:80`
 
 ### Working with Dockerhub
